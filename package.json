@@ -1,0 +1,47 @@
+{
+  "name": "vue-qr-code-styling",
+  "version": "1.0.0",
+  "description": "A Vue 3 component library for QR Code Styling",
+  "main": "dist/vue-qr-styling.umd.js",
+  "module": "dist/vue-qr-styling.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "qr-code",
+    "qr-styling",
+    "components"
+  ],
+  "author": "Behzad Nemati",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/behzad-nemati/vue-qr-code-styling"
+  },
+  "bugs": {
+    "url": "https://github.com/behzad-nemati/vue-qr-code-styling/issues"
+  },
+  "homepage": "https://github.com/behzad-nemati/vue-qr-code-styling#readme",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "dependencies": {
+    "qr-code-styling": "^1.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vue": "^3.0.0"
+  }
+}
