@@ -39,30 +39,21 @@ const qrHeight = ref(200)
 
 const qrOptions = reactive({
   dots: {
-    type: 'dots',
+    type: 'dots' as const,
     color: '#4267B2'
   },
   background: {
     color: '#E9EBEE'
   },
   cornersSquare: {
-    type: 'extra-rounded',
+    type: 'extra-rounded' as const,
     color: '#4267B2'
   },
   cornersDot: {
-    type: 'dot',
+    type: 'dot' as const,
     color: '#4267B2'
   }
 })
-setTimeout(()=> {
-    qrOptions.dots.type = "classy"
-    setTimeout(()=> {
-        qrOptions.cornersDot.type = "square"
-        setTimeout(()=> {
-            qrOptions.background.color = "#0012b110"
-        }, 2000)
-    }, 3000)
-}, 2000)
 </script>
 
 <style>

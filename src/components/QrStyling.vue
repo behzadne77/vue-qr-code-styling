@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
-import QRCodeStyling, { DrawType } from 'qr-code-styling'
+import QRCodeStyling, { DrawType, TypeNumber, Mode, ErrorCorrectionLevel } from 'qr-code-styling'
 
 interface Props {
   data: string
@@ -14,9 +14,9 @@ interface Props {
   image?: string
   margin?: number
   qrOptions?: {
-    typeNumber?: number
-    mode?: string
-    errorCorrectionLevel?: string
+    typeNumber?: TypeNumber
+    mode?: Mode
+    errorCorrectionLevel?: ErrorCorrectionLevel
   }
   imageOptions?: {
     hideBackgroundDots?: boolean
@@ -47,9 +47,9 @@ const props = withDefaults(defineProps<Props>(), {
   image: '',
   margin: 0,
   qrOptions: () => ({
-    typeNumber: 0,
-    mode: 'Byte',
-    errorCorrectionLevel: 'Q'
+    typeNumber: 0 as TypeNumber,
+    mode: 'Byte' as Mode,
+    errorCorrectionLevel: 'Q' as ErrorCorrectionLevel
   }),
   imageOptions: () => ({
     hideBackgroundDots: true,

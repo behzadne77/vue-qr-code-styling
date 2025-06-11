@@ -16,7 +16,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "declaration": true,
-    "outDir": "dist"
+    "declarationDir": "./dist/types"
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -25,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/behzad-nemati/vue-qr-code-styling"
+    "url": "https://github.com/behzadne77/vue-qr-code-styling"
   },
   "bugs": {
-    "url": "https://github.com/behzad-nemati/vue-qr-code-styling/issues"
+    "url": "https://github.com/behzadne77/vue-qr-code-styling/issues"
   },
-  "homepage": "https://github.com/behzad-nemati/vue-qr-code-styling#readme",
+  "homepage": "https://github.com/behzadne77/vue-qr-code-styling#readme",
   "peerDependencies": {
     "vue": "^3.0.0"
   },
@@ -42,6 +42,7 @@
     "@vitejs/plugin-vue": "^5.2.4",
     "typescript": "^5.0.0",
     "vite": "^5.0.0",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-tsc": "^2.2.10"
   }
 }
